@@ -1,0 +1,5 @@
+bartik_child:
+  css:
+    component:
+      css/style.css: {}
+    

@@ -1,0 +1,23 @@
+<script type="text/javascript">
+  if (typeof(LikeBtn) != "undefined") {
+    LikeBtn.init();
+  }
+</script>
+
+{% if html_before %}
+  {{ html_before }}
+{% endif %}
+
+{% if aligment %}
+  <div style="text-align:{{ aligment }}" class="likebtn_container">
+    <span class="likebtn-wrapper" {{ data }}></span>
+  </div>
+{% else %}
+  <div class="likebtn_container">
+    <span class="likebtn-wrapper" {{ data }}></span>
+  </div>
+{% endif %}
+
+{% if html_after %}
+  {{ html_after }}
+{% endif %}
